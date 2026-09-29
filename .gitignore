@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Environment variables / secrets
+.env
+.flaskenv
+
+# Flask instance folder
+instance/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# Database
+*.sqlite3
+*.db
