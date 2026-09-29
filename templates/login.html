@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width;initail-scale=1.0"/>
+        <link rel="stylesheet" href=""/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title><i class="fab "></i> HOME</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            body{
+                background-image: linear-gradient(lavender,maroon);
+                border-top: 0 solid maroon;
+                padding: 0px
+            }
+            header {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                padding: 7px;
+            }
+            header nav {
+                background:limegreen;
+                padding: 10px 14px;
+                display: flex;
+                scale: 0.9;
+                gap: 30px;
+                min-width: 320px;
+            ;
+                border: 0.1px solid whitesmoke;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px midnightblue;
+                border-bottom-left-radius: 36px;
+                justify-self: flex-end;
+                justify-content: space-evenly;
+            }
+            header::before{
+                content: "";
+                flex-grow: 1;
+                max-height: 0px;
+                border: 1px solid grey;
+            }
+            header a{
+                color: yellow;
+                background: none;
+                font-size: 0.81em;
+                border: none;
+                display: block;
+
+                text-decoration: none;
+                font-family: calibri;
+                text-underline-offset: 3.5px;
+                letter-spacing: 1px;
+                border-bottom: 2px solid aliceblue;
+                font-weight: bold;
+                border-radius: 0px;
+                text-transform: uppercase;
+                box-shadow: 0px 0px 0px green;
+            }
+            main{
+                padding: 12px 30px
+            }
+            main > h6{
+                color: yellow;
+                line-height: 2.5;
+                backgroud-color: silver;
+                float: lef;
+                padding: 2px 7px;
+                width: fit-content;
+                max-width: 100%;
+                text-transform: capitalize;
+                font-family: cambria;
+                text-shadow: 0px 4px 6px limegreen;
+                font-size: 2em;
+                letter-spacing: 1.2px;
+            }
+            h6{
+                color: aliceblue;
+                font-size: 1.8em;
+                font-family: cambria;
+            }
+            main div {
+                display: grid;
+            }
+            .banner  img{
+                max-height: 320px;
+                flex-grow: 2;
+                box-shadow: ;
+                background: rgba(58, 56, 56, 0.29);
+                border: 7.5px dashed aliceblue;
+                border-radius: 9px;
+                box-shadow: 0px 0px 17px midnightblue;
+                flex-basis: 170px;
+            }
+            div aside > h6{
+                color: black;
+                text-transform: uppercase;
+                font-family: cambria;
+                font-size: 1.1em;
+                text-align: center;
+                text-shadow: 0px 0px 0px black;
+                border-bottm: 1px solid black;
+            }
+            main aside{
+                justify-slf: flex-end;
+                justify-content: space-around;
+                align-ites: center;
+                min-width: 300px;;
+                gap: 10%
+            }
+            main p{
+                display: grid;
+                gap: 20px;
+                place-items: center;
+                padding: 18px 10px;
+                border-radius: 10px;
+                color: aliceblue;
+                background: purple;
+                boder: 1px inset white;
+                text-transform: capitalize;
+                margin-top: 10px;
+            }
+            a {
+                background-coor:lightblue;
+                color: yellow;
+                padding: 6px 12px;
+                max-width: 100%;
+                border-radius: 5px;
+                box-shaow: 0px 1px 5px black;
+                width: fit-content;
+font-size: 0.83rem;
+font-family: arial;
+                text-underline-offset: 3px;
+                font-weight: 700;
+                bordr: 1px groove midnightblue;
+            }
+            .banner figure {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                align-items: flex-end;
+                justify-content: space-around;
+                gap: 28px
+            }
+        
+            .banner figure figcaption{
+                backround: silver;
+                padding: 10px 8px;
+                flex-grow: 1;
+                scale: 0.93;
+                min-height: 300px;
+                bordr: 1px solid black;
+                border-radius: 9px
+            }
+            footer{
+                background: white;
+                padding: 10px ;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+                margin-top: 40px;
+            }
+            footer a{
+                color: midnightblue;
+                text-transform: capitalize;
+            }
+            dt{
+                font-size: 1.52em;
+                color: rebeccapurple;
+                font-family: cambria;
+                text-align: center;
+                text-transform: capitalize;
+                font-weight: 800;
+            }
+            dd{
+                padding: 5px;
+                with: fit-content;
+                margin: 0 auto;
+            }
+            li{
+                line-height: 2.6;
+                color: bisque;
+                text-transform: uppercase;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+                text-align: center;
+                border-radius: 7px;
+                background: silver;
+                margin-block: 24px;
+                width: fit-content;
+                padding: 7px;
+                font-weight: 780;
+                font-family: cambria;
+            }
+            button{
+                background-image: linear-gradient(78deg,antiquewhite,midnightblue);
+                font-weight: 600;
+                color: yellow;
+                border: none;
+           font-family: arial;
+                box-shadow: 0px 0px 8px black;
+                text-transform: capitalize;
+                min-width: 90%;
+                border-radius: 5px 12px;
+                padding: 12px 5px
+            }
+            aside i{
+                font-size: 8em;
+                min-width: 100%;
+                padding: 10px;
+                place-items: center;
+            }
+            legend{
+                font-family: cambria;
+                color: aliceblue;
+                text-shadow: 0px 1px 4px black;
+                text-transform: uppercase;
+            }
+            fieldset{
+                padding: 10px 54px;
+                border-radius: 10.5px;
+                border: none;
+                display: flex;
+                float: right;
+                clear: both;
+                justify-self: flex-end;
+                align-self: flex-end;
+                flex-wrap: wrap-reverse;
+                border-top: 2px solid purple;
+                marin: 35px auto;
+                margin-block: 23px;
+                width: min-content;
+                min-width: 70%;
+               
+            }
+            fieldset div{
+                padding: 10px;
+                border-radius: 10px 19px;
+               min-height: 120px;
+                 txt-shadow: 0px 6px 3px black;
+                 backgrond: lawngreen;
+                color: aliceblue;
+                font-weight: 670;
+                text-align: center;
+                line-height: 3.1;
+            }
+            #admin{
+                padding: 0px;
+                height: 100%;
+               
+            }
+            #admin > div{
+                display: flex;
+                justify-content: space-around;
+                overflow-x: auto;
+                flex-wrp: wrap;
+                padding: 18px;
+             gap: 10%;
+             scroll-margin-block-start: 230px;
+              
+                scale: 0.9;
+                row-gap: 30px;
+            }
+            #admin figure{
+                display: grid;
+                min-width: 230px;
+                place-items: center;
+                gap: 19px;
+                bordr: 1px solid grey
+            }
+            #admin img{
+              max-width: 130px;
+                height: 110px;
+
+                background: whitesmoke;
+                border-radius: 5%
+            }
+            #admin figcaption{
+                heiht: 20%;
+                min-width: 100%;
+                borer: 1px solid red;
+                padding: 0px
+            }
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <nav>
+            <a href="">f a q</a>
+            <a href="">contact</a>
+            </nav>
+        </header>
+        <main>
+        <h6>home address</h6>
+        <br>
+        <br>
+        <h6>{% with message = get_flashed_messages() %}
+            {% if message %}
+            {% for alert in message %}
+            <p id="messages"> {{alert}}</p>
+
+            {% endfor %}
+           
+            {% endif %}
+            {% endwith %}
+        
+            </h6>
+            <div class="banner">
+                <figure>
+
+                    <img src="/jpng.png" alt="ji" loading="eager"/>
+                    <figcaption><dl>
+                        <dt>we are ? ........</dt>
+                        <dd>
+                            <li style="background: rgb(240, 224, 6);min-width: 50%;color: maroon">fan club</li>
+                            <li style="background: white;width: 100%;color: forestgreen">music lover</li>
+                            <li style="background: rgb(136, 3, 148);float: right;min-width: 50%">group </li>
+                          
+                        </dd>
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <dt>motto....</dt>
+                <br>
+            <dd style="color: yellow;font-family: monospace;font-size: 2em;text-transform: uppercase;font-weight: 670">we good strong forever</dd></figcaption>
+                    </dl>
+                </figcaption> </figure>
+            </div>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend>misson</legend>
+                <div>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad architecto a, sit aspernatur quia inventore quod perspiciatis qui voluptates nostrum. Nulla rem repellat vel officia voluptatum quia corrupti provident vero.
+                </div>
+            </fieldset>
+<div style="clear: both;">
+    <aside style="justfy-self: flex-start;display: flex;flex-wrap: wrap">
+        <article>
+
+        
+        <h6> login </h6>
+        <p style="background: none;color: white;">register user only</p>
+<p style="box-shadow: 0px 0px 7px black;border: 0px solid aliceblue;min-width: 340px">
+do you want to login :
+<a href="{{ url_for('login_method')}}">login here</a>
+</p>
+</article>
+<section style="justify-self: flex-end;flex-grow: 1;display: grid;place-items: center">
+
+<!-- <i class="fas fa-check-double" style="color: green;font-sie: 2em;float: right"></i> -->
+</section>
+    </aside>
+<br>
+<p style="align-self: center;background: mediumslateblue;padding: 5px;border-radius: 2px"></p>
+<br>
+<aside style="">
+    <h6 style="color: aliceblue">sign up</h6>
+    <article style="min-width: 275px;display: flex;flex-wrap: reverse-wrap;align-items: center;gap: 20px;justify-content: space-evenly">
+    <!-- <p style="background: none;color: maroon;font-weight: 600">new  user only</p> -->
+<p style="min-width: 55%;box-shadow: 0px 0px 7px black;border: 0px solid aliceblue;">sign up for new user 
+
+    <a href="">sign up here</a>
+    </p>
+
+<section style="justify-self: flex-end;flex-gow: 1;border-left: 2px solid maroon;display: grid;place-items: center">
+    <i class="fas fa-circle-user" style="color: silver"></i>
+</section>
+</article>
+</aside>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="admin">
+    <h6>Admin</h6>
+    <br>
+    <div>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button>message</button></figcaption>
+        </figure>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button>message</button></figcaption>
+        </figure>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button>message</button></figcaption>
+        </figure>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button><i class="fab fa-facebook"></i>message</button></figcaption>
+        </figure>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button>message</button></figcaption>
+        </figure>
+        <figure>
+            <img src="jpng.png" alt="" />
+            <figcaption><button>message</button></figcaption>
+        </figure>
+    </div>
+</section>
+</main>
+<footer>
+    <p>.lorem</p>
+    <aside>
+        <a href="">how to ....</a>
+        <a href=""> join </a>
+        <a href=""> management</a>
+        <a href=""> announcement </a>
+    </aside>
+</footer>
+    </body>
+</html>
